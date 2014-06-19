@@ -4,10 +4,13 @@ import android.app.Activity;
 import android.app.ProgressDialog;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
 import android.widget.TextView;
 import org.json.JSONArray;
 import org.json.JSONObject;
 import java.util.ArrayList;
+import java.util.List;
 
 
 public class MainActivity extends Activity {
@@ -21,24 +24,57 @@ public class MainActivity extends Activity {
     private static final String TAG_MOBILE = "mobile";
     private static final String TAG_HOME = "home";
     private static final String TAG_OFFICE = "office";
+
+    public String id = "";
+    public String name = "";
+    public String email = "";
+    public String address = "";
+    public String gender = "";
+    public String mobile = "";
+    public String home = "";
+    public String office = "";
+
     ProgressDialog dialog;
     ArrayList<Contact> contacts;
     TextView tvData;
+    private ListView listView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        listView = (ListView) findViewById(R.id.listView);
+        List<String> strings = initData();
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1, strings);
+
+        listView.setAdapter(adapter);
         initializer();
         new ParseJSONTask().execute();
 
+    }
+    private List<String> initData(){
+        List<String> list=new ArrayList<String>();
+        list.add(id);
+        list.add(name);
+        list.add(email);
+        list.add(address);
+        list.add(gender);
+        list.add(mobile);
+        list.add(home);
+        list.add(office);
+
+        return list;
     }
 
     private void initializer() {
         dialog = new ProgressDialog(this);
         contacts = new ArrayList<Contact>();
         tvData = (TextView) findViewById(R.id.tvData);
+
+
     }
+
+
 
     private void updateUi() {
         String contactString = "";

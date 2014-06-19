@@ -3,5 +3,6 @@
 
     <string name="app_name">JSON</string>
     <string name="hello_world">Hello world!</string>
+    <string name="txt1">New Text</string>
 
 </resources>
