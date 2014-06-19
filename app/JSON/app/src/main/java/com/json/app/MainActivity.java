@@ -4,55 +4,48 @@ import android.app.Activity;
 import android.app.ProgressDialog;
 import android.os.AsyncTask;
 import android.os.Bundle;
-import android.widget.ArrayAdapter;
-import android.widget.ListView;
 import android.widget.TextView;
 import org.json.JSONArray;
 import org.json.JSONObject;
+
 import java.util.ArrayList;
-import java.util.List;
 
 
 public class MainActivity extends Activity {
-    private static final String TAG_CONTACTS = "contacts";
+    private static final String TAG_ONE = "1";
+    private static final String TAG_GROUP = "group";
     private static final String TAG_ID = "id";
-    private static final String TAG_NAME = "name";
-    private static final String TAG_EMAIL = "email";
-    private static final String TAG_ADDRESS = "address";
-    private static final String TAG_GENDER = "gender";
-    private static final String TAG_PHONE = "phone";
-    private static final String TAG_MOBILE = "mobile";
-    private static final String TAG_HOME = "home";
-    private static final String TAG_OFFICE = "office";
+    private static final String TAG_IS_FULL = "is_full";
+    private static final String TAG_NUMBER = "number";
+    private static final String TAG_ROOM_NUMBER = "room_number";
+    private static final String TAG_ROOM_TYPE = "room_type";
+    private static final String TAG_SUB_GROUP = "sub_group";
+    private static final String TAG_SUBJECT = "subject";
+    private static final String TAG_SUBJECT_TYPE = "subject_type";
+    private static final String TAG_TEACHER = "teacher";
+    private static final String TAG_TIME_END = "time_end";
+    private static final String TAG_TIME_START = "time_start";
 
-    public String id = "";
-    public String name = "";
-    public String email = "";
-    public String address = "";
-    public String gender = "";
-    public String mobile = "";
-    public String home = "";
-    public String office = "";
 
     ProgressDialog dialog;
-    ArrayList<Contact> contacts;
+    ArrayList<Timetable> timetables;
     TextView tvData;
-    private ListView listView;
+    // private ListView listView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        listView = (ListView) findViewById(R.id.listView);
-        List<String> strings = initData();
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1, strings);
+        //listView = (ListView) findViewById(R.id.listView);
+        // List<String> strings = initData();
+        // ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1, strings);
 
-        listView.setAdapter(adapter);
+        //listView.setAdapter(adapter);
         initializer();
         new ParseJSONTask().execute();
 
     }
-    private List<String> initData(){
+    /*private List<String> initData(){
         List<String> list=new ArrayList<String>();
         list.add(id);
         list.add(name);
@@ -64,22 +57,19 @@ public class MainActivity extends Activity {
         list.add(office);
 
         return list;
-    }
+    }*/
 
     private void initializer() {
         dialog = new ProgressDialog(this);
-        contacts = new ArrayList<Contact>();
+        timetables = new ArrayList<Timetable>();
         tvData = (TextView) findViewById(R.id.tvData);
-
-
     }
-
 
 
     private void updateUi() {
         String contactString = "";
-        for (Contact aContact : contacts) {
-            contactString += aContact.toString();
+        for (Timetable aTimetable : timetables) {
+            contactString += aTimetable.toString();
         }
         tvData.setText(contactString);
     }
@@ -96,28 +86,34 @@ public class MainActivity extends Activity {
         @Override
         protected Void doInBackground(Void... params) {
             WebService webservice = new WebService();
-            String jsonStr = webservice.getJSONData("https://json-parser-android.googlecode.com/git/json/contacts.json");
+            String jsonStr = webservice.getJSONData("https://json-parser-android.googlecode.com/git/json/timetable.json");
 
             try {
                 JSONObject jsonObject = new JSONObject(jsonStr);
-                JSONArray contactsJSON = jsonObject.getJSONArray(TAG_CONTACTS);
+                JSONArray timetableJSON = jsonObject.getJSONArray(TAG_ONE);
 
-                for (int i = 0; i < contactsJSON.length(); i++) {
-                    Contact aContact = new Contact();
-                    JSONObject contactObject = contactsJSON.getJSONObject(i);
-                    aContact.id = contactObject.getString(TAG_ID);
-                    aContact.name = contactObject.getString(TAG_NAME);
-                    aContact.email = contactObject.getString(TAG_EMAIL);
-                    aContact.address = contactObject.getString(TAG_ADDRESS);
-                    aContact.gender = contactObject.getString(TAG_GENDER);
+                for (int i = 0; i < timetableJSON.length(); i++) {
+                    Timetable aTimetable = new Timetable();
+                    JSONObject contactObject = timetableJSON.getJSONObject(i);
 
-                    JSONObject phoneObject = contactObject.getJSONObject(TAG_PHONE);
+                    aTimetable.group = contactObject.getString(TAG_GROUP);
+                    aTimetable.id = contactObject.getString(TAG_ID);
+                    aTimetable.is_full = contactObject.getString(TAG_IS_FULL);
 
-                    aContact.mobile = phoneObject.getString(TAG_MOBILE);
-                    aContact.home = phoneObject.getString(TAG_HOME);
-                    aContact.office = phoneObject.getString(TAG_OFFICE);
+                    aTimetable.number = contactObject.getString(TAG_NUMBER);
+                    aTimetable.room_number = contactObject.getString(TAG_ROOM_NUMBER);
+                    aTimetable.room_type = contactObject.getString(TAG_ROOM_TYPE);
+                    aTimetable.sub_group = contactObject.getString(TAG_SUB_GROUP);
+                    aTimetable.subject = contactObject.getString(TAG_SUBJECT);
+                    aTimetable.subject_type = contactObject.getString(TAG_SUBJECT_TYPE);
+                    aTimetable.teacher = contactObject.getString(TAG_TEACHER);
+                    aTimetable.time_end = contactObject.getString(TAG_TIME_END);
+                    aTimetable.time_start = contactObject.getString(TAG_TIME_START);
 
-                    contacts.add(aContact);
+                    //JSONObject phoneObject = contactObject.getJSONObject(TAG_PHONE);
+
+
+                    timetables.add(aTimetable);
                 }
             } catch (Exception e) {
                 e.printStackTrace();
