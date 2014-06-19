@@ -86,7 +86,7 @@ public class MainActivity extends Activity {
         @Override
         protected Void doInBackground(Void... params) {
             WebService webservice = new WebService();
-            String jsonStr = webservice.getJSONData("https://json-parser-android.googlecode.com/git/json/timetable.json");
+            String jsonStr = webservice.getJSONData("https://json-parser-android.googlecode.com/git/json/timetabletest.json");
 
             try {
                 JSONObject jsonObject = new JSONObject(jsonStr);
