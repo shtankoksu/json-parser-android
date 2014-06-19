@@ -12,7 +12,7 @@ import java.util.ArrayList;
 
 
 public class MainActivity extends Activity {
-    private static final String TAG_ONE = "1";
+    private static final String TAG_ONE = "one";
     private static final String TAG_GROUP = "group";
     private static final String TAG_ID = "id";
     private static final String TAG_IS_FULL = "is_full";
