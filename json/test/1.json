@@ -14,35 +14,5 @@
          "time_end": "09:50:00",
          "time_start": "08:30:00"
       }
-   ],
-   "2": [
-      {
-         "group": "431",
-         "id": 1,
-         "is_full": null,
-         "number": 2,
-         "room_number": "506",
-         "room_type": "комп\r",
-         "sub_group": "1",
-         "subject": "ЧеловекоМашВзаим\r",
-         "subject_type": "Лаб",
-         "techer": "Teacher 1\r",
-         "time_end": "11:30:00",
-         "time_start": "10:10:10"
-      },
-      {
-         "group": "431",
-         "id": 3,
-         "is_full": null,
-         "number": 2,
-         "room_number": "601",
-         "room_type": "комп\r",
-         "sub_group": "2",
-         "subject": "ЧеловекоМашВзаим\r",
-         "subject_type": "Лаб",
-         "techer": "Teacher 4\r",
-         "time_end": "11:30:00",
-         "time_start": "10:10:10"
-      }
    ]
 }
