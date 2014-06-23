@@ -17,19 +17,8 @@ import java.util.ArrayList;
 public class One extends Activity {
 
     private static final String TAG_WEEK_A = "2";
-    private static final String TAG_WEEK_B = "1";
     private static final String TAG_MONDAY = "4";
-    private static final String TAG_TUESDAY = "tuesday";
-    private static final String TAG_WEDNESDAY = "wednesday";
-    private static final String TAG_THURSDAY = "thursday";
-    private static final String TAG_FRIDAY = "friday";
-    private static final String TAG_SATURDAY = "saturday";
     private static final String TAG_1 = "1";
-    private static final String TAG_2 = "2";
-    private static final String TAG_3 = "3";
-    private static final String TAG_4 = "4";
-    private static final String TAG_5 = "5";
-    private static final String TAG_6 = "6";
     private static final String TAG_GROUP = "group";
     private static final String TAG_ID = "id";
     private static final String TAG_IS_FULL = "is_full";
@@ -39,7 +28,7 @@ public class One extends Activity {
     private static final String TAG_SUB_GROUP = "sub_group";
     private static final String TAG_SUBJECT = "subject";
     private static final String TAG_SUBJECT_TYPE = "subject_type";
-    private static final String TAG_TEACHER = "techer";
+    private static final String TAG_TEACHER = "teacher";
     private static final String TAG_TIME_END = "time_end";
     private static final String TAG_TIME_START = "time_start";
 
@@ -106,7 +95,7 @@ public class One extends Activity {
                     aweekA.sub_group = dayObject.getString(TAG_SUB_GROUP);
                     aweekA.subject = dayObject.getString(TAG_SUBJECT);
                     aweekA.subject_type = dayObject.getString(TAG_SUBJECT_TYPE);
-                    aweekA.techer = dayObject.getString(TAG_TEACHER);
+                    aweekA.teacher = dayObject.getString(TAG_TEACHER);
                     aweekA.time_end = dayObject.getString(TAG_TIME_END);
                     aweekA.time_start = dayObject.getString(TAG_TIME_START);
                     weekA.add(aweekA);

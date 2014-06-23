@@ -38,7 +38,7 @@ public class Parser extends Activity {
     private static final String TAG_SUB_GROUP = "sub_group";
     private static final String TAG_SUBJECT = "subject";
     private static final String TAG_SUBJECT_TYPE = "subject_type";
-    private static final String TAG_TEACHER = "techer";
+    private static final String TAG_TEACHER = "teacher";
     private static final String TAG_TIME_END = "time_end";
     private static final String TAG_TIME_START = "time_start";
 
@@ -105,7 +105,7 @@ public class Parser extends Activity {
                     aweekA.sub_group = dayObject.getString(TAG_SUB_GROUP);
                     aweekA.subject = dayObject.getString(TAG_SUBJECT);
                     aweekA.subject_type = dayObject.getString(TAG_SUBJECT_TYPE);
-                    aweekA.techer = dayObject.getString(TAG_TEACHER);
+                    aweekA.teacher = dayObject.getString(TAG_TEACHER);
                     aweekA.time_end = dayObject.getString(TAG_TIME_END);
                     aweekA.time_start = dayObject.getString(TAG_TIME_START);
                     weekA.add(aweekA);
