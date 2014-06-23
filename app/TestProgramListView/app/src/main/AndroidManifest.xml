@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="edu.shtanko.testprogramlistview.app" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="edu.shtanko.testprogramlistview.app.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="edu.shtanko.testprogramlistview.app.ListActivity" />
+        <activity android:name="edu.shtanko.testprogramlistview.app.WeeksActivity" />
+        <activity android:name="edu.shtanko.testprogramlistview.week.WeekB" />
+        <activity android:name="edu.shtanko.testprogramlistview.week.WeekA" />
+
+
+
+//-------------------------------------------------------------------------------------------
+        <activity
+            android:name="edu.shtanko.testprogramlistview.daysWeekA.Monday"
+            android:label="@string/title_activity_lessons_week" >
+        </activity>
+        <activity
+            android:name="edu.shtanko.testprogramlistview.weekA.lessonsMondayA.Two"
+            android:label="@string/title_activity_two" >
+        </activity>
+        <activity
+            android:name="edu.shtanko.testprogramlistview.weekA.lessonsMondayA.One"
+            android:label="@string/title_activity_one" >
+        </activity>
+        <activity
+            android:name="edu.shtanko.testprogramlistview.weekA.lessonsMondayA.Three"
+            android:label="@string/title_activity_three" >
+        </activity>
+        <activity
+            android:name="edu.shtanko.testprogramlistview.weekA.lessonsMondayA.Four"
+            android:label="@string/title_activity_four" >
+        </activity>
+        <activity
+            android:name="edu.shtanko.testprogramlistview.weekA.lessonsMondayA.Five"
+            android:label="@string/title_activity_five" >
+        </activity>
+        <activity
+            android:name="edu.shtanko.testprogramlistview.weekA.lessonsMondayA.Six"
+            android:label="@string/title_activity_six" >
+        </activity>
+
+        <activity
+                android:name="edu.shtanko.testprogramlistview.weekA.lessonsTuesdayA.Two"
+                android:label="@string/title_activity_two" >
+        </activity>
+        <activity
+                android:name="edu.shtanko.testprogramlistview.weekA.lessonsTuesdayA.One"
+                android:label="@string/title_activity_one" >
+        </activity>
+        <activity
+                android:name="edu.shtanko.testprogramlistview.weekA.lessonsTuesdayA.Three"
+                android:label="@string/title_activity_three" >
+        </activity>
+        <activity
+                android:name="edu.shtanko.testprogramlistview.weekA.lessonsTuesdayA.Four"
+                android:label="@string/title_activity_four" >
+        </activity>
+        <activity
+                android:name="edu.shtanko.testprogramlistview.weekA.lessonsTuesdayA.Five"
+                android:label="@string/title_activity_five" >
+        </activity>
+        <activity
+                android:name="edu.shtanko.testprogramlistview.weekA.lessonsTuesdayA.Six"
+                android:label="@string/title_activity_six" >
+        </activity>
+
+        <activity
+                android:name="edu.shtanko.testprogramlistview.weekA.lessonsWednesdayA.Two"
+                android:label="@string/title_activity_two" >
+        </activity>
+        <activity
+                android:name="edu.shtanko.testprogramlistview.weekA.lessonsWednesdayA.One"
+                android:label="@string/title_activity_one" >
+        </activity>
+        <activity
+                android:name="edu.shtanko.testprogramlistview.weekA.lessonsWednesdayA.Three"
+                android:label="@string/title_activity_three" >
+        </activity>
+        <activity
+                android:name="edu.shtanko.testprogramlistview.weekA.lessonsWednesdayA.Four"
+                android:label="@string/title_activity_four" >
+        </activity>
+        <activity
+                android:name="edu.shtanko.testprogramlistview.weekA.lessonsWednesdayA.Five"
+                android:label="@string/title_activity_five" >
+        </activity>
+        <activity
+                android:name="edu.shtanko.testprogramlistview.weekA.lessonsWednesdayA.Six"
+                android:label="@string/title_activity_six" >
+        </activity>
+
+        <activity
+                android:name="edu.shtanko.testprogramlistview.weekA.lessonsThursdayA.Two"
+                android:label="@string/title_activity_two" >
+        </activity>
+        <activity
+                android:name="edu.shtanko.testprogramlistview.weekA.lessonsThursdayA.One"
+                android:label="@string/title_activity_one" >
+        </activity>
+        <activity
+                android:name="edu.shtanko.testprogramlistview.weekA.lessonsThursdayA.Three"
+                android:label="@string/title_activity_three" >
+        </activity>
+        <activity
+                android:name="edu.shtanko.testprogramlistview.weekA.lessonsThursdayA.Four"
+                android:label="@string/title_activity_four" >
+        </activity>
+        <activity
+                android:name="edu.shtanko.testprogramlistview.weekA.lessonsThursdayA.Five"
+                android:label="@string/title_activity_five" >
+        </activity>
+        <activity
+                android:name="edu.shtanko.testprogramlistview.weekA.lessonsThursdayA.Six"
+                android:label="@string/title_activity_six" >
+        </activity>
+
+        <activity
+                android:name="edu.shtanko.testprogramlistview.weekA.lessonsFridayA.Two"
+                android:label="@string/title_activity_two" >
+        </activity>
+        <activity
+                android:name="edu.shtanko.testprogramlistview.weekA.lessonsFridayA.One"
+                android:label="@string/title_activity_one" >
+        </activity>
+        <activity
+                android:name="edu.shtanko.testprogramlistview.weekA.lessonsFridayA.Three"
+                android:label="@string/title_activity_three" >
+        </activity>
+        <activity
+                android:name="edu.shtanko.testprogramlistview.weekA.lessonsFridayA.Four"
+                android:label="@string/title_activity_four" >
+        </activity>
+        <activity
+                android:name="edu.shtanko.testprogramlistview.weekA.lessonsFridayA.Five"
+                android:label="@string/title_activity_five" >
+        </activity>
+        <activity
+                android:name="edu.shtanko.testprogramlistview.weekA.lessonsFridayA.Six"
+                android:label="@string/title_activity_six" >
+        </activity>
+
+        <activity
+            android:name="edu.shtanko.testprogramlistview.daysWeekA.Tuesday"
+            android:label="@string/title_activity_tuesday" >
+        </activity>
+        <activity
+            android:name="edu.shtanko.testprogramlistview.daysWeekA.Wednesday"
+            android:label="@string/title_activity_wednesday" >
+        </activity>
+        <activity
+            android:name="edu.shtanko.testprogramlistview.daysWeekA.Thursday"
+            android:label="@string/title_activity_thurstday" >
+        </activity>
+        <activity
+            android:name="edu.shtanko.testprogramlistview.daysWeekA.Friday"
+            android:label="@string/title_activity_friday" >
+        </activity>
+//-------------------------------------------------------------------------------------------
+
+//-------------------------------------------------------------------------------------------
+
+
+
+
+        <activity
+                android:name="edu.shtanko.testprogramlistview.daysWeekB.Monday"
+                android:label="@string/title_activity_lessons_week" >
+        </activity>
+        <activity
+                android:name="edu.shtanko.testprogramlistview.weekB.lessonsMondayB.Two"
+                android:label="@string/title_activity_two" >
+        </activity>
+        <activity
+                android:name="edu.shtanko.testprogramlistview.weekB.lessonsMondayB.One"
+                android:label="@string/title_activity_one" >
+        </activity>
+        <activity
+                android:name="edu.shtanko.testprogramlistview.weekB.lessonsMondayB.Three"
+                android:label="@string/title_activity_three" >
+        </activity>
+        <activity
+                android:name="edu.shtanko.testprogramlistview.weekB.lessonsMondayB.Four"
+                android:label="@string/title_activity_four" >
+        </activity>
+        <activity
+                android:name="edu.shtanko.testprogramlistview.weekB.lessonsMondayB.Five"
+                android:label="@string/title_activity_five" >
+        </activity>
+        <activity
+                android:name="edu.shtanko.testprogramlistview.weekB.lessonsMondayB.Six"
+                android:label="@string/title_activity_six" >
+        </activity>
+
+        <activity
+                android:name="edu.shtanko.testprogramlistview.weekB.lessonsTuesdayB.Two"
+                android:label="@string/title_activity_two" >
+        </activity>
+        <activity
+                android:name="edu.shtanko.testprogramlistview.weekB.lessonsTuesdayB.One"
+                android:label="@string/title_activity_one" >
+        </activity>
+        <activity
+                android:name="edu.shtanko.testprogramlistview.weekB.lessonsTuesdayB.Three"
+                android:label="@string/title_activity_three" >
+        </activity>
+        <activity
+                android:name="edu.shtanko.testprogramlistview.weekB.lessonsTuesdayB.Four"
+                android:label="@string/title_activity_four" >
+        </activity>
+        <activity
+                android:name="edu.shtanko.testprogramlistview.weekB.lessonsTuesdayB.Five"
+                android:label="@string/title_activity_five" >
+        </activity>
+        <activity
+                android:name="edu.shtanko.testprogramlistview.weekB.lessonsTuesdayB.Six"
+                android:label="@string/title_activity_six" >
+        </activity>
+
+        <activity
+                android:name="edu.shtanko.testprogramlistview.weekB.lessonsWednesdayB.Two"
+                android:label="@string/title_activity_two" >
+        </activity>
+        <activity
+                android:name="edu.shtanko.testprogramlistview.weekB.lessonsWednesdayB.One"
+                android:label="@string/title_activity_one" >
+        </activity>
+        <activity
+                android:name="edu.shtanko.testprogramlistview.weekB.lessonsWednesdayB.Three"
+                android:label="@string/title_activity_three" >
+        </activity>
+        <activity
+                android:name="edu.shtanko.testprogramlistview.weekB.lessonsWednesdayB.Four"
+                android:label="@string/title_activity_four" >
+        </activity>
+        <activity
+                android:name="edu.shtanko.testprogramlistview.weekB.lessonsWednesdayB.Five"
+                android:label="@string/title_activity_five" >
+        </activity>
+        <activity
+                android:name="edu.shtanko.testprogramlistview.weekB.lessonsWednesdayB.Six"
+                android:label="@string/title_activity_six" >
+        </activity>
+
+        <activity
+                android:name="edu.shtanko.testprogramlistview.weekB.lessonsThursdayB.Two"
+                android:label="@string/title_activity_two" >
+        </activity>
+        <activity
+                android:name="edu.shtanko.testprogramlistview.weekB.lessonsThursdayB.One"
+                android:label="@string/title_activity_one" >
+        </activity>
+        <activity
+                android:name="edu.shtanko.testprogramlistview.weekB.lessonsThursdayB.Three"
+                android:label="@string/title_activity_three" >
+        </activity>
+        <activity
+                android:name="edu.shtanko.testprogramlistview.weekB.lessonsThursdayB.Four"
+                android:label="@string/title_activity_four" >
+        </activity>
+        <activity
+                android:name="edu.shtanko.testprogramlistview.weekB.lessonsThursdayB.Five"
+                android:label="@string/title_activity_five" >
+        </activity>
+        <activity
+                android:name="edu.shtanko.testprogramlistview.weekB.lessonsThursdayB.Six"
+                android:label="@string/title_activity_six" >
+        </activity>
+
+        <activity
+                android:name="edu.shtanko.testprogramlistview.weekB.lessonsFridayB.Two"
+                android:label="@string/title_activity_two" >
+        </activity>
+        <activity
+                android:name="edu.shtanko.testprogramlistview.weekB.lessonsFridayB.One"
+                android:label="@string/title_activity_one" >
+        </activity>
+        <activity
+                android:name="edu.shtanko.testprogramlistview.weekB.lessonsFridayB.Three"
+                android:label="@string/title_activity_three" >
+        </activity>
+        <activity
+                android:name="edu.shtanko.testprogramlistview.weekB.lessonsFridayB.Four"
+                android:label="@string/title_activity_four" >
+        </activity>
+        <activity
+                android:name="edu.shtanko.testprogramlistview.weekB.lessonsFridayB.Five"
+                android:label="@string/title_activity_five" >
+        </activity>
+        <activity
+                android:name="edu.shtanko.testprogramlistview.weekB.lessonsFridayB.Six"
+                android:label="@string/title_activity_six" >
+        </activity>
+
+        <activity
+                android:name="edu.shtanko.testprogramlistview.daysWeekB.Tuesday"
+                android:label="@string/title_activity_tuesday" >
+        </activity>
+        <activity
+                android:name="edu.shtanko.testprogramlistview.daysWeekB.Wednesday"
+                android:label="@string/title_activity_wednesday" >
+        </activity>
+        <activity
+                android:name="edu.shtanko.testprogramlistview.daysWeekB.Thursday"
+                android:label="@string/title_activity_thurstday" >
+        </activity>
+        <activity
+                android:name="edu.shtanko.testprogramlistview.daysWeekB.Friday"
+                android:label="@string/title_activity_friday" >
+        </activity>
+
+
+
+
+
+
+
+//--------------------------------------------------------------------------------------------
+
+    </application>
+
+</manifest>
