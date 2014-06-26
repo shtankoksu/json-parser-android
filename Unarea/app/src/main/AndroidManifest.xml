@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="edu.shtanko.unarea.app" >
+    <uses-permission android:name="android.permission.INTERNET" />
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="edu.shtanko.unarea.app.main.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="edu.shtanko.unarea.app.weeks.week_a.WeekA"
+            android:label="@string/title_activity_week" >
+        </activity>
+        <activity
+            android:name="edu.shtanko.unarea.app.weeks.week_b.WeekB"
+            android:label="@string/title_activity_week_b" >
+        </activity>
+        <activity
+            android:name="edu.shtanko.unarea.app.days_week_a.Monday"
+            android:label="@string/title_activity_monday" >
+        </activity>
+        <activity
+            android:name="edu.shtanko.unarea.app.days_week_a.Tuesday"
+            android:label="@string/title_activity_tuesday" >
+        </activity>
+        <activity
+            android:name="edu.shtanko.unarea.app.days_week_a.Wednesday"
+            android:label="@string/title_activity_wednesday" >
+        </activity>
+        <activity
+            android:name="edu.shtanko.unarea.app.days_week_a.Thursday"
+            android:label="@string/title_activity_thursday" >
+        </activity>
+        <activity
+            android:name="edu.shtanko.unarea.app.days_week_a.Friday"
+            android:label="@string/title_activity_friday" >
+        </activity>
+        //--------------------------------------------------
+        <activity
+            android:name="edu.shtanko.unarea.app.days_week_b.Monday"
+            android:label="@string/title_activity_monday" >
+        </activity>
+        <activity
+            android:name="edu.shtanko.unarea.app.days_week_b.Tuesday"
+            android:label="@string/title_activity_tuesday" >
+        </activity>
+        <activity
+            android:name="edu.shtanko.unarea.app.days_week_b.Wednesday"
+            android:label="@string/title_activity_wednesday" >
+        </activity>
+        <activity
+            android:name="edu.shtanko.unarea.app.days_week_b.Thursday"
+            android:label="@string/title_activity_thursday" >
+        </activity>
+        <activity
+            android:name="edu.shtanko.unarea.app.days_week_b.Friday"
+            android:label="@string/title_activity_friday" >
+        </activity>
+        //----------------------------------------------------------------------
+        <activity
+            android:name="edu.shtanko.unarea.app.weeks.week_a.monday_lessons_week_a.One"
+            android:label="@string/title_activity_one" >
+        </activity>
+        <activity
+            android:name="edu.shtanko.unarea.app.weeks.week_a.monday_lessons_week_a.Two"
+            android:label="@string/title_activity_two" >
+        </activity>
+        <activity
+            android:name="edu.shtanko.unarea.app.weeks.week_a.monday_lessons_week_a.Three"
+            android:label="@string/title_activity_three" >
+        </activity>
+        <activity
+            android:name="edu.shtanko.unarea.app.weeks.week_a.monday_lessons_week_a.Four"
+            android:label="@string/title_activity_four" >
+        </activity>
+        <activity
+            android:name="edu.shtanko.unarea.app.weeks.week_a.monday_lessons_week_a.Five"
+            android:label="@string/title_activity_five" >
+        </activity>
+        <activity
+            android:name="edu.shtanko.unarea.app.weeks.week_a.monday_lessons_week_a.Six"
+            android:label="@string/title_activity_six" >
+        </activity>
+        <activity
+            android:name="edu.shtanko.unarea.app.main.Parser"
+            android:label="@string/title_activity_parser" >
+        </activity>
+
+        //-----------------------------------------------
+        <activity
+                android:name="edu.shtanko.unarea.app.weeks.week_b.monday_lessons_week_b.One"
+                android:label="@string/title_activity_one" >
+        </activity>
+        <activity
+                android:name="edu.shtanko.unarea.app.weeks.week_b.monday_lessons_week_b.Two"
+                android:label="@string/title_activity_two" >
+        </activity>
+        <activity
+                android:name="edu.shtanko.unarea.app.weeks.week_b.monday_lessons_week_b.Three"
+                android:label="@string/title_activity_three" >
+        </activity>
+        <activity
+                android:name="edu.shtanko.unarea.app.weeks.week_b.monday_lessons_week_b.Four"
+                android:label="@string/title_activity_four" >
+        </activity>
+        <activity
+                android:name="edu.shtanko.unarea.app.weeks.week_b.monday_lessons_week_b.Five"
+                android:label="@string/title_activity_five" >
+        </activity>
+        <activity
+                android:name="edu.shtanko.unarea.app.weeks.week_b.monday_lessons_week_b.Six"
+                android:label="@string/title_activity_six" >
+        </activity>
+        //---------------------------------------------------------------------------
+        <activity
+                android:name="edu.shtanko.unarea.app.weeks.week_a.tuesday_lessond_week_a.One"
+                android:label="@string/title_activity_one" >
+        </activity>
+        <activity
+                android:name="edu.shtanko.unarea.app.weeks.week_a.tuesday_lessond_week_a.Two"
+                android:label="@string/title_activity_two" >
+        </activity>
+        <activity
+                android:name="edu.shtanko.unarea.app.weeks.week_a.tuesday_lessond_week_a.Three"
+                android:label="@string/title_activity_three" >
+        </activity>
+        <activity
+                android:name="edu.shtanko.unarea.app.weeks.week_a.tuesday_lessond_week_a.Four"
+                android:label="@string/title_activity_four" >
+        </activity>
+        <activity
+                android:name="edu.shtanko.unarea.app.weeks.week_a.tuesday_lessond_week_a.Five"
+                android:label="@string/title_activity_five" >
+        </activity>
+        <activity
+                android:name="edu.shtanko.unarea.app.weeks.week_a.tuesday_lessond_week_a.Six"
+                android:label="@string/title_activity_six" >
+        </activity>
+        //-------------------------------------------------------------------------------
+        <activity
+                android:name="edu.shtanko.unarea.app.weeks.week_a.wednesday_lessons_week_a.One"
+                android:label="@string/title_activity_one" >
+        </activity>
+        <activity
+                android:name="edu.shtanko.unarea.app.weeks.week_a.wednesday_lessons_week_a.Two"
+                android:label="@string/title_activity_two" >
+        </activity>
+        <activity
+                android:name="edu.shtanko.unarea.app.weeks.week_a.wednesday_lessons_week_a.Three"
+                android:label="@string/title_activity_three" >
+        </activity>
+        <activity
+                android:name="edu.shtanko.unarea.app.weeks.week_a.wednesday_lessons_week_a.Four"
+                android:label="@string/title_activity_four" >
+        </activity>
+        <activity
+                android:name="edu.shtanko.unarea.app.weeks.week_a.wednesday_lessons_week_a.Five"
+                android:label="@string/title_activity_five" >
+        </activity>
+        <activity
+                android:name="edu.shtanko.unarea.app.weeks.week_a.wednesday_lessons_week_a.Six"
+                android:label="@string/title_activity_six" >
+        </activity>
+        //---------------------------------------------------------------------------------------
+        <activity
+                android:name="edu.shtanko.unarea.app.weeks.week_a.thursday_lessons_week_a.One"
+                android:label="@string/title_activity_one" >
+        </activity>
+        <activity
+                android:name="edu.shtanko.unarea.app.weeks.week_a.thursday_lessons_week_a.Two"
+                android:label="@string/title_activity_two" >
+        </activity>
+        <activity
+                android:name="edu.shtanko.unarea.app.weeks.week_a.thursday_lessons_week_a.Three"
+                android:label="@string/title_activity_three" >
+        </activity>
+        <activity
+                android:name="edu.shtanko.unarea.app.weeks.week_a.thursday_lessons_week_a.Four"
+                android:label="@string/title_activity_four" >
+        </activity>
+        <activity
+                android:name="edu.shtanko.unarea.app.weeks.week_a.thursday_lessons_week_a.Five"
+                android:label="@string/title_activity_five" >
+        </activity>
+        <activity
+                android:name="edu.shtanko.unarea.app.weeks.week_a.thursday_lessons_week_a.Six"
+                android:label="@string/title_activity_six" >
+        </activity>
+        //-------------------------------------------------------------------------------------
+        <activity
+                android:name="edu.shtanko.unarea.app.weeks.week_a.friday_lessons_week_a.One"
+                android:label="@string/title_activity_one" >
+        </activity>
+        <activity
+                android:name="edu.shtanko.unarea.app.weeks.week_a.friday_lessons_week_a.Two"
+                android:label="@string/title_activity_two" >
+        </activity>
+        <activity
+                android:name="edu.shtanko.unarea.app.weeks.week_a.friday_lessons_week_a.Three"
+                android:label="@string/title_activity_three" >
+        </activity>
+        <activity
+                android:name="edu.shtanko.unarea.app.weeks.week_a.friday_lessons_week_a.Four"
+                android:label="@string/title_activity_four" >
+        </activity>
+        <activity
+                android:name="edu.shtanko.unarea.app.weeks.week_a.friday_lessons_week_a.Five"
+                android:label="@string/title_activity_five" >
+        </activity>
+        <activity
+                android:name="edu.shtanko.unarea.app.weeks.week_a.friday_lessons_week_a.Six"
+                android:label="@string/title_activity_six" >
+        </activity>
+        //--------------------------------------------------------------------------------------
+        <activity
+                android:name="edu.shtanko.unarea.app.weeks.week_b.tuesday_lessons_week_b.One"
+                android:label="@string/title_activity_one" >
+        </activity>
+        <activity
+                android:name="edu.shtanko.unarea.app.weeks.week_b.tuesday_lessons_week_b.Two"
+                android:label="@string/title_activity_two" >
+        </activity>
+        <activity
+                android:name="edu.shtanko.unarea.app.weeks.week_b.tuesday_lessons_week_b.Three"
+                android:label="@string/title_activity_three" >
+        </activity>
+        <activity
+                android:name="edu.shtanko.unarea.app.weeks.week_b.tuesday_lessons_week_b.Four"
+                android:label="@string/title_activity_four" >
+        </activity>
+        <activity
+                android:name="edu.shtanko.unarea.app.weeks.week_b.tuesday_lessons_week_b.Five"
+                android:label="@string/title_activity_five" >
+        </activity>
+        <activity
+                android:name="edu.shtanko.unarea.app.weeks.week_b.tuesday_lessons_week_b.Six"
+                android:label="@string/title_activity_six" >
+        </activity>
+        //-----------------------------------------------------------------------------------------
+        <activity
+                android:name="edu.shtanko.unarea.app.weeks.week_b.wednesday_lessons_week_b.One"
+                android:label="@string/title_activity_one" >
+        </activity>
+        <activity
+                android:name="edu.shtanko.unarea.app.weeks.week_b.wednesday_lessons_week_b.Two"
+                android:label="@string/title_activity_two" >
+        </activity>
+        <activity
+                android:name="edu.shtanko.unarea.app.weeks.week_b.wednesday_lessons_week_b.Three"
+                android:label="@string/title_activity_three" >
+        </activity>
+        <activity
+                android:name="edu.shtanko.unarea.app.weeks.week_b.wednesday_lessons_week_b.Four"
+                android:label="@string/title_activity_four" >
+        </activity>
+        <activity
+                android:name="edu.shtanko.unarea.app.weeks.week_b.wednesday_lessons_week_b.Five"
+                android:label="@string/title_activity_five" >
+        </activity>
+        <activity
+                android:name="edu.shtanko.unarea.app.weeks.week_b.wednesday_lessons_week_b.Six"
+                android:label="@string/title_activity_six" >
+        </activity>
+        //------------------------------------------------------------------------------------
+        <activity
+                android:name="edu.shtanko.unarea.app.weeks.week_b.thursday_lessons_week_b.One"
+                android:label="@string/title_activity_one" >
+        </activity>
+        <activity
+                android:name="edu.shtanko.unarea.app.weeks.week_b.thursday_lessons_week_b.Two"
+                android:label="@string/title_activity_two" >
+        </activity>
+        <activity
+                android:name="edu.shtanko.unarea.app.weeks.week_b.thursday_lessons_week_b.Three"
+                android:label="@string/title_activity_three" >
+        </activity>
+        <activity
+                android:name="edu.shtanko.unarea.app.weeks.week_b.thursday_lessons_week_b.Four"
+                android:label="@string/title_activity_four" >
+        </activity>
+        <activity
+                android:name="edu.shtanko.unarea.app.weeks.week_b.thursday_lessons_week_b.Five"
+                android:label="@string/title_activity_five" >
+        </activity>
+        <activity
+                android:name="edu.shtanko.unarea.app.weeks.week_b.thursday_lessons_week_b.Six"
+                android:label="@string/title_activity_six" >
+        </activity>
+        //---------------------------------------------------------------------------------------------
+        <activity
+                android:name="edu.shtanko.unarea.app.weeks.week_b.friday_lessons_week_b.One"
+                android:label="@string/title_activity_one" >
+        </activity>
+        <activity
+                android:name="edu.shtanko.unarea.app.weeks.week_b.friday_lessons_week_b.Two"
+                android:label="@string/title_activity_two" >
+        </activity>
+        <activity
+                android:name="edu.shtanko.unarea.app.weeks.week_b.friday_lessons_week_b.Three"
+                android:label="@string/title_activity_three" >
+        </activity>
+        <activity
+                android:name="edu.shtanko.unarea.app.weeks.week_b.friday_lessons_week_b.Four"
+                android:label="@string/title_activity_four" >
+        </activity>
+        <activity
+                android:name="edu.shtanko.unarea.app.weeks.week_b.friday_lessons_week_b.Five"
+                android:label="@string/title_activity_five" >
+        </activity>
+        <activity
+                android:name="edu.shtanko.unarea.app.weeks.week_b.friday_lessons_week_b.Six"
+                android:label="@string/title_activity_six" >
+        </activity>
+
+    </application>
+
+</manifest>
